@@ -486,7 +486,7 @@
 			},
 			"SparkPoolName": {
 				"type": "string",
-				"defaultValue": "sparkpoolfhir"
+				"defaultValue": "sparkpoolfhirlg"
 			},
 			"DatasetSize": {
 				"type": "string",
