@@ -1,0 +1,24 @@
+{
+	"name": "WWIModel",
+	"properties": {
+		"Name": "WWIModel",
+		"EntityType": "DATABASE",
+		"Description": "",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"ConsumerGoods\",\"Version\":\"1.1.0\"}}}",
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://raw@adlsfhir.dfs.core.windows.net/",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "wkspc-synapse-fhir-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}
