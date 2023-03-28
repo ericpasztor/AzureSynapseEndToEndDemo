@@ -159,13 +159,13 @@
 				"FormatType": "parquet",
 				"SerializeLib": "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe",
 				"Properties": {
-					"path": "abfss://@.dfs.core.windows.net/EmployeeLanguageUsage",
+					"path": "abfss://raw@adlsfhir.dfs.core.windows.net/fhir_ndjson/EmployeeLanguageUsage",
 					"FormatTypeSetToDatabaseDefault": true
 				}
 			},
 			"Source": {
 				"Provider": "ADLS",
-				"Location": "abfss://@.dfs.core.windows.net/EmployeeLanguageUsage",
+				"Location": "abfss://raw@adlsfhir.dfs.core.windows.net/fhir_ndjson/EmployeeLanguageUsage",
 				"Properties": {
 					"LinkedServiceName": "wkspc-synapse-fhir-WorkspaceDefaultStorage",
 					"LocationSetToDatabaseDefault": true

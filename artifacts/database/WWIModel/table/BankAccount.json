@@ -72,13 +72,13 @@
 				"FormatType": "parquet",
 				"SerializeLib": "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe",
 				"Properties": {
-					"path": "abfss://@.dfs.core.windows.net/BankAccount",
+					"path": "abfss://raw@adlsfhir.dfs.core.windows.net/fhir_ndjson/BankAccount",
 					"FormatTypeSetToDatabaseDefault": true
 				}
 			},
 			"Source": {
 				"Provider": "ADLS",
-				"Location": "abfss://@.dfs.core.windows.net/BankAccount",
+				"Location": "abfss://raw@adlsfhir.dfs.core.windows.net/fhir_ndjson/BankAccount",
 				"Properties": {
 					"LinkedServiceName": "wkspc-synapse-fhir-WorkspaceDefaultStorage",
 					"LocationSetToDatabaseDefault": true

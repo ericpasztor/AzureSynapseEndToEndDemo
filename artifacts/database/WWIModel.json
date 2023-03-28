@@ -13,7 +13,7 @@
 		},
 		"Source": {
 			"Provider": "ADLS",
-			"Location": "abfss://raw@adlsfhir.dfs.core.windows.net/",
+			"Location": "abfss://raw@adlsfhir.dfs.core.windows.net/fhir_ndjson",
 			"Properties": {
 				"FormatType": "parquet",
 				"LinkedServiceName": "wkspc-synapse-fhir-WorkspaceDefaultStorage"

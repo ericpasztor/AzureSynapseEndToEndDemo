@@ -126,13 +126,13 @@
 				"FormatType": "parquet",
 				"SerializeLib": "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe",
 				"Properties": {
-					"path": "abfss://@.dfs.core.windows.net/EmployeeEmail",
+					"path": "abfss://raw@adlsfhir.dfs.core.windows.net/fhir_ndjson/EmployeeEmail",
 					"FormatTypeSetToDatabaseDefault": true
 				}
 			},
 			"Source": {
 				"Provider": "ADLS",
-				"Location": "abfss://@.dfs.core.windows.net/EmployeeEmail",
+				"Location": "abfss://raw@adlsfhir.dfs.core.windows.net/fhir_ndjson/EmployeeEmail",
 				"Properties": {
 					"LinkedServiceName": "wkspc-synapse-fhir-WorkspaceDefaultStorage",
 					"LocationSetToDatabaseDefault": true
